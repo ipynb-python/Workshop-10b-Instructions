@@ -1,4 +1,4 @@
-# Python Week 9 Assessed Workshop
+# Python Week 10 Assessed Workshop
 
 ---
 
@@ -28,7 +28,7 @@ https://github.com/phil-lewis-exe/PythonCheatSheets
 
 ## TASKS
 
-# Workshop 9b
+# Workshop 10b
 
 This workshop has three sections. 
 
@@ -42,259 +42,374 @@ The weighting for each section in the advanced workshops is approximately: part 
 
 ## Part 1
 
-This section includes 10 short tasks covering skills on the module so far. 
+This section includes short tasks covering skills on the module so far. 
 
 If you get stuck on a particular task you are advised to move on and revisit it if you have time.
 
 ---
 
-Markdown Source
-#### Part `1a`
+#### Part 1a
 
-Work in file `part_1a.py`
-
-The code below defines a list.
+Look at the following example that defines variable `var1`
+then displays info about the type of object `var1` is.
 
 ```python
-mylist = [ "a", "b", "c" ]
+var1 = "hello"
+print("var1: str")
 ```
 
-**i.** Write code to add an entry `"d"` to the end of the list
+Edit the print lines below
+so they display the right object types
+for `var2` and `var3` following the format
+from the example above.    
 
-**ii.** Print the length of `mylist`
-
----
-
-#### Part `1b`
-
-Work in file `part_1b.py`
-
-The code below defines a dictionary.
 
 ```python
-english = { 'start_msg': 'Hello' }
+var2 = 0.6
+var3 = 4
+
+print("var2: ")
+print("var3: ")
 ```
 
-**i.** Write code that prints the dictionary entry for key: `start_msg`
+Choose from:
 
-**ii.** Write code to add the following entry to the dictionary:
-* key: `"end_msg"`
-* value: `"Bye"`
+`int` `float` `bool` `str` `list` `dict` `tuple`
 
-Check the entry was added using: `print(english)`
 
 ---
 
-#### Part `1c`
+#### Part 1b
 
-Work in file `part_1c.py`
+Write code to do the calculation below and 
+store the result as variable: `z`
 
-**i.** Define a function called `get_half` that takes a single argument: `num`. It should return a value which is half the number passed to the function.
+your code should make use of the variable `x`
+as defined below so it would work if a 
+different value is used 
 
-**ii.** Add a line of code demonstrating how to use the function with the value `10`, storing the output from the function as variable: `result`.
+```
+        6 + x
+ z =   -------
+        6 - x
+```
 
-Check the correct value (`5.0`) is returned using: `print(result)`
+Test your code with: `print(z)`
 
----
-
-#### Part `1d`
-
-Work in file `part_1d.py`
-
-Use Python to find the average of values: `54.6`, `56.2`, `60.2` (e.g. add all values together and divide by `3`).
-
-Store the result as: `av_time`
-
-Check the correct value (`57.0`) is returned using: `print(av_time)`
-
----
-
-#### Part `1e`
-
-Work in file `part_1e.py`
-
-The code below defines two variables with information about who was ruler of England in `1890`.
+Start with the code line:
 
 ```python
-year = 1890
-ruler = "Victoria"
-```
-
-Use an f-string to print a message:
-
-`In the year _ the ruler of England was _.`
-
-Where the blanks `_` are filled using the relevant values in the variables.
-
----
-
-#### Part `1f`
-
-Work in file `part_1f.py`
-
-The code below defines:
-* A list of names stored as variable: `people`
-* The name of an individual stored as variable: `person`
-
-```python
-people = [ 'Anne', 'Bea', 'Colin', 'Dan' ]
-person = 'Anne'
-```
-
-The coder needs to check if name: `person` is included in this list: `people`.
-
-Write an `if` statement to do this. Print `IN LIST` or `NOT IN LIST` according to the result.
-
----
-
-#### Part `2a`
-
-Work in file `part_2a.py`
-
-```python
-from pathlib import Path
-```
-
-Using the `pathlib` module write the following message into file: `message.txt`
-
-`I am a text file`
-
----
-
-#### Part `2b`
-
-Work in file `part_2b.py`
-
-```python
-from pathlib import Path
-```
-
-File: `num_list.txt` contains numbers in word form (e.g. `two`, `seven`) each on a separate line.
-
-Read in the contents of the file and use it to put each word into a Python list variable: `numbers`.
-
-Check your work using: `print(numbers)`
-
----
-
-#### Part `2c`
-
-Work in file `part_2c.py`
-
-```python
-from pathlib import Path
-```
-
-Write code to find all files in the current directory with a `*.log` extension.
-
-Loop over these files, extract the name, and print each one to screen.
-
-Expected output (may be in different order):
-
-```text
-access_26_11_25.log
-access_25_11_25.log
-access_23_11_25.log
-access_24_11_25.log
+x = 2
 ```
 
 ---
 
-#### Part `2d`
+#### Part 1c
 
-Work in file `part_2d.py`
+Create a tuple with name: `mytuple`
+that stores the values: 12, 4, 5
 
-The code below defines variables storing weather data for the month of October.
-
-```python
-from pathlib import Path
-
-date_str = "oct25"
-temp = 8.2
-rainfall = 65
-```
-
-Write some code that can save the info in these variables into a `.txt` file.
-
-The code should name the file using the content of: `date_str` (i.e. in this case the file will save as: `oct25.txt`).
-
-Your code should write these on two lines using the following format:
-
-```text
-Temperature (C): _
-Rainfall (mm): _
-```
-
-Where the blank `_` are replaced with the appropriate value.
+Test your code using: `print(mytuple)`
 
 ---
 
-#### Part `2e`
+#### Part 1d
 
-Work in file `part_2e.py`
+The following code defines a list
+storing a set of strings
 
 ```python
-from pathlib import Path
+mylist = [ "I", "II", "III", "IIII", "V", "VI" ]
 ```
 
-**i.** Write code to read in the content from file: `book.txt` and store this as variable: `book_str`.
+Create a variable named: `myslice`
+that selects the first 3 items from `mylist`
 
-**ii.** Find the number of characters in the loaded content and store as variable: `nchar`.
-
-**iii.** Split `book_str` into a list of the words it contains and store as list variable: `words`.
-
-**iv.** Find the number of words in the loaded content and store as variable: `nwords`.
-
-*Hint: To split into words replace each newline character to a space, and split on spaces.*
-
-Check your work using: `print(nchar, nwords)` (Expected output: `7589` `1386`)
+Test your code using: `print(myslice)`
 
 ---
 
-#### Part `3a`
+#### Part 1e
 
-Work in file `part_3a.py`
+Write a function named: `double_print`
+that takes a single argument: `msg`
 
-```python
-from pathlib import Path
+The function should print this variable twice.
+
+e.g. if we pass in the value `banana` the
+output would be:
+
+```
+banana
+banana
 ```
 
-Load in the file: `book_cleaned.txt`. This stores the cleaned text from `book.txt` with one word per line.
-
-The cleaning process involves:
-* all text was converted to lower case
-* all non-letters (`a-z`) were removed
-
-**i.** Print all words with a length more than `10` letters. You should display each word followed by its length (e.g. `disappeared` `11`).
-
-**ii.** Count the number of times the word `pizza` appears in the book. Store this value in variable: `n_pizza` and print it.
-*Hint: You can use the `.count()` method for counting matching entries in a list.*
-
-**iii.** Use `set()` on the complete word list to find the set of unique words in the book. Store this as: `unique_words`.
-
-**iv.** Make a dictionary: `word_counts`. Add entries to store the count of all words that appear `20` or more times in the book.
+Add code to demonstrate the function
+using argument: `hello`
 
 ---
 
-#### Part `3b`
+#### Part 1f
 
-Work in file `part_3b.py`
-
-```python
-from pathlib import Path
-```
-
-Write code that is able to load file: `book.txt`. It should clean the text as described above and save it to file: `mybook_cleaned.txt` (i.e. repeat the processing used to make `book_cleaned.txt`).
-
-Hint. One option to elminate characters that are not letters is to use `.isalpha()` as demonstrated below:
+The following code defines a list
+storing a set of strings:
 
 ```python
-mystr = "abc 123 !?. xyz"
-for letter in mystr:
-     if letter.isalpha():
-          print(letter)
+mylist = [ "I", "II", "III", "IIII", "V", "VI" ]
 ```
-    
+
+Write code to loop over the list items and 
+print out the number of `I`'s in each string.
+
+It should display one value per line with expected output:
+
+```
+1
+2
+3
+4
+0
+1
+```
+
+Hint. For a string `mystr` we could count the
+number of `X`s it contains using:
+
+```python
+mystr.count("X")` 
+```
+
+---
+
+#### Part 1g
+
+The following dictionary has been set up to translate 
+between digits 1-5 and simplified roman numerals:
+
+```python
+mydict = {
+    1: "I",
+    2: "2",
+    3: "III",
+    4: "IIII",
+    5: "V",
+}
+```
+
+The value for key `2` should be `II`.
+
+Show how you can add an extra line of code to edit the relevant 
+dictionary entry in `mydict` to update
+this value.
+
+Test your code with: `print(mydict)`
+
+---
+
+#### Part 1h
+
+The following code can print a countdown
+starting from an input argument `x`
+
+```python
+    def countdown(x):
+       while x > 0:
+           print(x)
+           x = x - 1
+   
+    countdown(5)
+```
+
+Edit the code so:
+
+i. the function takes a default argument: `10`
+
+ii. the example shows how to call the function
+to check the default argument works
+
+-----
+
+## Part 2
+
+These tasks require you to write tests and handle exceptions.
+
+---
+
+#### Part 2a
+
+The code below reads in a a username from
+file: `user.txt`
+
+```python
+   from pathlib import Path
+   
+   filename = "user.txt"
+   
+   username = Path(filename).read_text()
+   
+   print(f"Hello {username}")
+```
+
+Edit this code to ensure that it can handle the situation
+that file `user.txt` does not exist
+
+In this case an exception should not occur,
+variable `username` should be set to: `nobody`
+and the message below should be displayed:
+
+```
+File missing, using: nobody
+```
+
+----
+
+#### Part 2b
+
+The function `rn_to_digit` is supposed to take
+a simplified roman numeral and translate it 
+to its integer value.
+
+Requirement: 
+It should correctly translate the values below:
+
+```
+I II III IIII V VI VII VIII VIIII
+1  2  3   4   5  6  7    8    9
+```
+
+e.g. `rn_to_digit("III")` should return the integer `3`
+
+```python
+   def rn_to_digit(num):
+       total = 0
+       total += num.count("I")
+       total += num.count("V")
+       return total
+```
+
+**i.** Work in file: `test_rn_to_digit.py` 
+
+Write a test function that can be used by `pytest`
+to check if the function works correctly for
+the stated requirements.
+
+Remember include the relevant import to load the
+function to be tested from this file.
+
+
+**ii.** Work in this file.
+At the moment the function below includes an error. 
+
+Edit the code to fix the function.
+
+
+----
+
+#### Part 2c
+
+A coder wants to write a function to add 
+two simplified roman numeral numbers that
+will work for sums up to 100:
+
+The basic pattern for the function is in place
+as below
+
+```python
+def rn_add(a, b):
+   total = 0
+   # code to be added
+   # ...
+   return total
+```
+
+However before they write the function they decide 
+write a test that can verify its behaviour.
+
+Requirement:
+
+It should work for any calculation that totals 100 or less.
+
+e.g. `rn_add("I", "XX")` should return `21`
+
+*YOU DO NOT HAVE TO WRITE THE FUNCTION CODE*
+
+*YOU HAVE TO WRITE THE TESTS FOR THE FUNCTION*
+
+Work in file: `test_rn_add.py`
+
+Add test functions that can check if `rn_add`
+works when given valid inputs (sum to 100 or less).
+
+i.e. numerals involved could include:
+
+```
+I: 1:   V: 5,  X: 10,  D: 50, C: 100
+```
+
+Your test code does not have to test every possibility
+but should check a suitable set of calculations
+
+Remember include the relevant import to load the
+function to be tested from this file
+
+```python
+def rn_add(a, b):
+   total = 0
+
+   return total
+```
+
+----
+
+### Part 3
+
+This task is more challenging and involves writing and testing a function.
+
+---
+
+#### 3a.
+
+Work in file `part3.py`
+
+Write a function: `rn_times_ten`
+
+that takes input argument: `myval`
+
+Requirement:
+
+**Input argument:** roman numeral `str` in range 1-100
+
+**Output:** a roman numeral `str` that is ten times bigger
+
+Hint. You can do this by builing the output value
+from the characters in the input string using rules:
+
+```
+I --> X   (i.e. 1 --> 10)
+V --> D   (i.e. 5 --> 50)
+X --> C   (i.e. 10 --> 100)
+D --> L   (i.e. 50 --> 500)
+C --> M   (i.e. 100 --> 1000)
+```
+
+i.e. 
+
+`rn_times_ten("XIII")` should return `CXXX`
+
+#### 3b.
+
+Ensure the function includes code to
+throw and exception if a user attempts to pass 
+an input value with invalid characters
+
+
+#### 3c. 
+
+Add test code that is able to test your function
+against the requirements.
+
+Work in test file `test_rn_times_ten.py`
+
 ---
 
 ### Submitting your work
@@ -303,7 +418,7 @@ Run the following lines in the terminal to stage, commit and push your code back
 
 ```
 git add .
-git commit -m "completed 9b"
+git commit -m "completed 10b"
 git push
 ```
 
