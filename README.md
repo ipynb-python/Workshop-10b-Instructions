@@ -250,8 +250,8 @@ file: `user.txt`
    print(f"Hello {username}")
 ```
 
-Edit this code to ensure that it can handle the situation
-that file `user.txt` does not exist
+Edit the code to ensure that it can handle the situation
+that file `user.txt` does not exist.
 
 In this case an exception should not occur,
 variable `username` should be set to: `nobody`
@@ -260,6 +260,12 @@ and the message below should be displayed:
 ```
 File missing, using: nobody
 ```
+
+followed by the result of the print statement which will be:
+
+```
+Hello nobody
+``
 
 ----
 
