@@ -1,5 +1,11 @@
 # Python Week 10 Assessed Workshop
 
+#### Run the following code in the CodeSpaces terminal to download and setup the workshop files in your repository:
+
+```
+wget https://github.com/ipynb-python/Workshop-10b-Instructions/raw/refs/heads/main/workshop10.zip; unzip workshop10.zip
+```
+
 ---
 
 #### Note on workshop attendance...
