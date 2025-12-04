@@ -271,7 +271,7 @@ followed by the result of the print statement which will be:
 
 ```
 Hello nobody
-``
+```
 
 ----
 
